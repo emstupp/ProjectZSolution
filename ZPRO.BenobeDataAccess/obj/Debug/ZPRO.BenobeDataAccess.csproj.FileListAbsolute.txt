@@ -1,0 +1,9 @@
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.BenobeDataAccess\bin\Debug\ZPRO.BenobeDataAccess.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.BenobeDataAccess\bin\Debug\ZPRO.BenobeDataAccess.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.BenobeDataAccess\bin\Debug\ZPRO.Model.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.BenobeDataAccess\bin\Debug\ZPRO.Model.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.BenobeDataAccess\obj\Debug\ZPRO.BenobeDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.BenobeDataAccess\obj\Debug\ZPRO.BenobeDataAccess.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.BenobeDataAccess\obj\Debug\ZPRO.BenobeDataAccess.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.BenobeDataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.BenobeDataAccess\bin\Debug\Newtonsoft.Json.xml

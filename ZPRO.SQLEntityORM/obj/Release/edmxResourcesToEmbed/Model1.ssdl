@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ZPRO.SQLEntityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Assignment">
+    <Key>
+      <PropertyRef Name="AssignmentID" />
+    </Key>
+    <Property Name="AssignmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CourseID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Type" Type="nchar" MaxLength="30" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="30" Nullable="false" />
+    <Property Name="DueDate" Type="datetime" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Observation">
+    <Key>
+      <PropertyRef Name="ObservationID" />
+    </Key>
+    <Property Name="ObservationID" Type="int" Nullable="false" />
+    <Property Name="SampleID" Type="int" Nullable="false" />
+    <Property Name="obs" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sample">
+    <Key>
+      <PropertyRef Name="SampleID" />
+    </Key>
+    <Property Name="SampleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatisticID" Type="int" />
+    <Property Name="SampleMean" Type="float" Nullable="false" />
+    <Property Name="SampleStDev" Type="float" Nullable="false" />
+    <Property Name="SampleSize" Type="int" Nullable="false" />
+    <Property Name="StdErrorMean" Type="varchar" MaxLength="20" />
+    <Property Name="PopulationMean" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TStat">
+    <Key>
+      <PropertyRef Name="T_ID" />
+    </Key>
+    <Property Name="T_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CriticalT" Type="float" Nullable="false" />
+    <Property Name="ObservedT" Type="float" Nullable="false" />
+    <Property Name="Alpha" Type="float" Nullable="false" />
+    <Property Name="TwoTailed" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ZStat">
+    <Key>
+      <PropertyRef Name="Z_ID" />
+    </Key>
+    <Property Name="Z_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CriticalZ" Type="float" Nullable="false" />
+    <Property Name="ObservedZ" Type="float" Nullable="false" />
+    <Property Name="Alpha" Type="float" Nullable="false" />
+    <Property Name="TwoTailed" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="ObservationList_Sample">
+    <End Role="Sample" Type="Self.Sample" Multiplicity="1" />
+    <End Role="Observation" Type="Self.Observation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sample">
+        <PropertyRef Name="SampleID" />
+      </Principal>
+      <Dependent Role="Observation">
+        <PropertyRef Name="SampleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SampleList_T">
+    <End Role="TStat" Type="Self.TStat" Multiplicity="0..1" />
+    <End Role="Sample" Type="Self.Sample" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TStat">
+        <PropertyRef Name="T_ID" />
+      </Principal>
+      <Dependent Role="Sample">
+        <PropertyRef Name="StatisticID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SampleList_Z">
+    <End Role="ZStat" Type="Self.ZStat" Multiplicity="0..1" />
+    <End Role="Sample" Type="Self.Sample" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ZStat">
+        <PropertyRef Name="Z_ID" />
+      </Principal>
+      <Dependent Role="Sample">
+        <PropertyRef Name="StatisticID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ZPROSQLEntityModelStoreContainer">
+    <EntitySet Name="Assignment" EntityType="Self.Assignment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Observation" EntityType="Self.Observation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sample" EntityType="Self.Sample" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TStat" EntityType="Self.TStat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ZStat" EntityType="Self.ZStat" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="ObservationList_Sample" Association="Self.ObservationList_Sample">
+      <End Role="Sample" EntitySet="Sample" />
+      <End Role="Observation" EntitySet="Observation" />
+    </AssociationSet>
+    <AssociationSet Name="SampleList_T" Association="Self.SampleList_T">
+      <End Role="TStat" EntitySet="TStat" />
+      <End Role="Sample" EntitySet="Sample" />
+    </AssociationSet>
+    <AssociationSet Name="SampleList_Z" Association="Self.SampleList_Z">
+      <End Role="ZStat" EntitySet="ZStat" />
+      <End Role="Sample" EntitySet="Sample" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

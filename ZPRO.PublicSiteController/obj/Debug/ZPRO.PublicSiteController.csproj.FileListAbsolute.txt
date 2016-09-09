@@ -1,0 +1,13 @@
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Debug\ZPRO.PublicSiteController.dll
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Debug\ZPRO.PublicSiteController.pdb
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Debug\ZPRO.Model.dll
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Debug\ZPRO.SQLDBDataAccess.dll
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Debug\ZPRO.Model.pdb
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Debug\ZPRO.SQLDBDataAccess.pdb
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\obj\Debug\ZPRO.PublicSiteController.csprojResolveAssemblyReference.cache
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\obj\Debug\ZPRO.PublicSiteController.dll
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\obj\Debug\ZPRO.PublicSiteController.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Debug\ZPRO.BenobeDataAccess.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Debug\ZPRO.BenobeDataAccess.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Debug\Newtonsoft.Json.xml

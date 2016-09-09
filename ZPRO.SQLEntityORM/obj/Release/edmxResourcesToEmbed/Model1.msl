@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ZPROSQLEntityModelStoreContainer" CdmEntityContainer="myzprodataEntities">
+    <EntitySetMapping Name="Assignments">
+      <EntityTypeMapping TypeName="ZPRO.SQLEntityModel.Assignment">
+        <MappingFragment StoreEntitySet="Assignment">
+          <ScalarProperty Name="AssignmentID" ColumnName="AssignmentID" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Observations">
+      <EntityTypeMapping TypeName="ZPRO.SQLEntityModel.Observation">
+        <MappingFragment StoreEntitySet="Observation">
+          <ScalarProperty Name="ObservationID" ColumnName="ObservationID" />
+          <ScalarProperty Name="SampleID" ColumnName="SampleID" />
+          <ScalarProperty Name="obs" ColumnName="obs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Samples">
+      <EntityTypeMapping TypeName="ZPRO.SQLEntityModel.Sample">
+        <MappingFragment StoreEntitySet="Sample">
+          <ScalarProperty Name="SampleID" ColumnName="SampleID" />
+          <ScalarProperty Name="StatisticID" ColumnName="StatisticID" />
+          <ScalarProperty Name="SampleMean" ColumnName="SampleMean" />
+          <ScalarProperty Name="SampleStDev" ColumnName="SampleStDev" />
+          <ScalarProperty Name="SampleSize" ColumnName="SampleSize" />
+          <ScalarProperty Name="StdErrorMean" ColumnName="StdErrorMean" />
+          <ScalarProperty Name="PopulationMean" ColumnName="PopulationMean" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TStats">
+      <EntityTypeMapping TypeName="ZPRO.SQLEntityModel.TStat">
+        <MappingFragment StoreEntitySet="TStat">
+          <ScalarProperty Name="T_ID" ColumnName="T_ID" />
+          <ScalarProperty Name="CriticalT" ColumnName="CriticalT" />
+          <ScalarProperty Name="ObservedT" ColumnName="ObservedT" />
+          <ScalarProperty Name="Alpha" ColumnName="Alpha" />
+          <ScalarProperty Name="TwoTailed" ColumnName="TwoTailed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ZPRO.SQLEntityModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZStats">
+      <EntityTypeMapping TypeName="ZPRO.SQLEntityModel.ZStat">
+        <MappingFragment StoreEntitySet="ZStat">
+          <ScalarProperty Name="Z_ID" ColumnName="Z_ID" />
+          <ScalarProperty Name="CriticalZ" ColumnName="CriticalZ" />
+          <ScalarProperty Name="ObservedZ" ColumnName="ObservedZ" />
+          <ScalarProperty Name="Alpha" ColumnName="Alpha" />
+          <ScalarProperty Name="TwoTailed" ColumnName="TwoTailed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

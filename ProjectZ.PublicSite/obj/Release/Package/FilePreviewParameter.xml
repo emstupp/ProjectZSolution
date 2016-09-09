@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ZPRO" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Eric\\Documents\\Visual\ Studio\ 2015\\Projects\\ProjectZSolution\\ProjectZ\.PublicSite\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Eric\\Documents\\Visual\ Studio\ 2015\\Projects\\ProjectZSolution\\ProjectZ\.PublicSite\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DBInformation-Web.config Connection String" description="" value="Data Source=tcp:zprodata.database.windows.net,1433;Initial Catalog=ZPROdata;User ID=stupparde@zprodata;Password=Ilikeart2" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Eric\\Documents\\Visual\ Studio\ 2015\\Projects\\ProjectZSolution\\ProjectZ\.PublicSite\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DBInformation']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ZPRO.SQLEntityModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Assignment">
+    <Key>
+      <PropertyRef Name="AssignmentID" />
+    </Key>
+    <Property Name="AssignmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CourseID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="DueDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Observation">
+    <Key>
+      <PropertyRef Name="ObservationID" />
+    </Key>
+    <Property Name="ObservationID" Type="Int32" Nullable="false" />
+    <Property Name="SampleID" Type="Int32" Nullable="false" />
+    <Property Name="obs" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Sample" Relationship="Self.ObservationList_Sample" FromRole="Observation" ToRole="Sample" />
+  </EntityType>
+  <EntityType Name="Sample">
+    <Key>
+      <PropertyRef Name="SampleID" />
+    </Key>
+    <Property Name="SampleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StatisticID" Type="Int32" />
+    <Property Name="SampleMean" Type="Double" Nullable="false" />
+    <Property Name="SampleStDev" Type="Double" Nullable="false" />
+    <Property Name="SampleSize" Type="Int32" Nullable="false" />
+    <Property Name="StdErrorMean" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PopulationMean" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Observations" Relationship="Self.ObservationList_Sample" FromRole="Sample" ToRole="Observation" />
+    <NavigationProperty Name="TStat" Relationship="Self.SampleList_T" FromRole="Sample" ToRole="TStat" />
+    <NavigationProperty Name="ZStat" Relationship="Self.SampleList_Z" FromRole="Sample" ToRole="ZStat" />
+  </EntityType>
+  <EntityType Name="TStat">
+    <Key>
+      <PropertyRef Name="T_ID" />
+    </Key>
+    <Property Name="T_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CriticalT" Type="Double" Nullable="false" />
+    <Property Name="ObservedT" Type="Double" Nullable="false" />
+    <Property Name="Alpha" Type="Double" Nullable="false" />
+    <Property Name="TwoTailed" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Samples" Relationship="Self.SampleList_T" FromRole="TStat" ToRole="Sample" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ZStat">
+    <Key>
+      <PropertyRef Name="Z_ID" />
+    </Key>
+    <Property Name="Z_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CriticalZ" Type="Double" Nullable="false" />
+    <Property Name="ObservedZ" Type="Double" Nullable="false" />
+    <Property Name="Alpha" Type="Double" Nullable="false" />
+    <Property Name="TwoTailed" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Samples" Relationship="Self.SampleList_Z" FromRole="ZStat" ToRole="Sample" />
+  </EntityType>
+  <Association Name="ObservationList_Sample">
+    <End Role="Sample" Type="Self.Sample" Multiplicity="1" />
+    <End Role="Observation" Type="Self.Observation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sample">
+        <PropertyRef Name="SampleID" />
+      </Principal>
+      <Dependent Role="Observation">
+        <PropertyRef Name="SampleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SampleList_T">
+    <End Role="TStat" Type="Self.TStat" Multiplicity="0..1" />
+    <End Role="Sample" Type="Self.Sample" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TStat">
+        <PropertyRef Name="T_ID" />
+      </Principal>
+      <Dependent Role="Sample">
+        <PropertyRef Name="StatisticID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SampleList_Z">
+    <End Role="ZStat" Type="Self.ZStat" Multiplicity="0..1" />
+    <End Role="Sample" Type="Self.Sample" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ZStat">
+        <PropertyRef Name="Z_ID" />
+      </Principal>
+      <Dependent Role="Sample">
+        <PropertyRef Name="StatisticID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="myzprodataEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Assignments" EntityType="Self.Assignment" />
+    <EntitySet Name="Observations" EntityType="Self.Observation" />
+    <EntitySet Name="Samples" EntityType="Self.Sample" />
+    <EntitySet Name="TStats" EntityType="Self.TStat" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="ZStats" EntityType="Self.ZStat" />
+    <AssociationSet Name="ObservationList_Sample" Association="Self.ObservationList_Sample">
+      <End Role="Sample" EntitySet="Samples" />
+      <End Role="Observation" EntitySet="Observations" />
+    </AssociationSet>
+    <AssociationSet Name="SampleList_T" Association="Self.SampleList_T">
+      <End Role="TStat" EntitySet="TStats" />
+      <End Role="Sample" EntitySet="Samples" />
+    </AssociationSet>
+    <AssociationSet Name="SampleList_Z" Association="Self.SampleList_Z">
+      <End Role="ZStat" EntitySet="ZStats" />
+      <End Role="Sample" EntitySet="Samples" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

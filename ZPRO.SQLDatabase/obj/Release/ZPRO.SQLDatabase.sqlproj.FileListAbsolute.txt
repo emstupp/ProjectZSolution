@@ -1,0 +1,5 @@
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\bin\Release\ZPRO.SQLDatabase.dacpac
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\bin\Release\ZPRO.SQLDatabase.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\bin\Release\ZPRO.SQLDatabase.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\obj\Release\ZPRO.SQLDatabase.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\obj\Release\ZPRO.SQLDatabase.pdb

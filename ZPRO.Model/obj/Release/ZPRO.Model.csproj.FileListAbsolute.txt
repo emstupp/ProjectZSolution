@@ -1,0 +1,5 @@
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.Model\bin\Release\ZPRO.Model.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.Model\bin\Release\ZPRO.Model.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.Model\obj\Release\ZPRO.Model.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.Model\obj\Release\ZPRO.Model.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.Model\obj\Release\ZPRO.Model.pdb

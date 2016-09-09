@@ -1,0 +1,7 @@
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.SQLDBDataAccess\bin\Debug\ZPRO.SQLDBDataAccess.dll
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.SQLDBDataAccess\bin\Debug\ZPRO.SQLDBDataAccess.pdb
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.SQLDBDataAccess\bin\Debug\ZPRO.Model.dll
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.SQLDBDataAccess\bin\Debug\ZPRO.Model.pdb
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.SQLDBDataAccess\obj\Debug\ZPRO.SQLDBDataAccess.csprojResolveAssemblyReference.cache
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.SQLDBDataAccess\obj\Debug\ZPRO.SQLDBDataAccess.dll
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.SQLDBDataAccess\obj\Debug\ZPRO.SQLDBDataAccess.pdb

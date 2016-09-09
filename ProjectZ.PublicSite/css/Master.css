@@ -1,0 +1,20 @@
+﻿.tabMasterLinks {
+ 
+       
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end, space-around;
+}
+
+
+.tabManageLinks {
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end, space-around;
+}

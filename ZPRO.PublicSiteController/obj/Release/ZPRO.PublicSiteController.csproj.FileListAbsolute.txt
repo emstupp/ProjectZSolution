@@ -1,0 +1,17 @@
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\ZPRO.PublicSiteController.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\ZPRO.PublicSiteController.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\ZPRO.Model.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\ZPRO.SQLDBDataAccess.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\ZPRO.Model.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\ZPRO.SQLDBDataAccess.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\obj\Release\ZPRO.PublicSiteController.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\obj\Release\ZPRO.PublicSiteController.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\obj\Release\ZPRO.PublicSiteController.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\ZPRO.BenobeDataAccess.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\Newtonsoft.Json.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\ZPRO.BenobeDataAccess.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\Newtonsoft.Json.xml
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\ZPRO.SQLEntityORM.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\EntityFramework.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\ZPRO.SQLEntityORM.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.PublicSiteController\bin\Release\EntityFramework.xml

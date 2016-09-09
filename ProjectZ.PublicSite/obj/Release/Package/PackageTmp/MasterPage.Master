@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ProjectZ.PublicSite.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="css/Master.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style6 {
+            width: 100%;
+        }
+        .auto-style7 {
+            width: 90px;
+        }
+        .auto-style8 {
+            width: 104px;
+        }
+        .auto-style9 {
+            height: 57px;
+        }
+        .auto-style10 {
+            width: 217px;
+            height: 101px;
+        }
+        .auto-style11 {
+            width: 224px;
+            height: 124px;
+        }
+        .auto-style12 {
+            width: 213px;
+            height: 129px;
+        }
+        .auto-style13 {
+            width: 206px;
+            height: 118px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="masterDiv" style="margin-left: 40px">
+        <table class="auto-style6">
+            <tr>
+                <td class="auto-style9"><h1>Project Z</h1></td>
+            </tr>
+            <tr>
+                <td><h3>The future of statistical analysis</h3></td>
+            </tr>
+        </table>
+        <table class="auto-style6">
+            <tr>
+                <td class="auto-style8"> 
+                    <img class="auto-style10" src="newimages/zdist.png" /></td>
+                <td class="auto-style7">
+                    <img class="auto-style11" src="newimages/tdist.png" /></td>
+                <td>
+                    <img class="auto-style12" src="newimages/fdist.png" /></td>
+                <td>
+                    <img class="auto-style13" src="newimages/chidist.png" /></td>
+            </tr>
+        </table>
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <table class="tabMasterLinks">
+            <tr>
+                <td>
+        <asp:HyperLink ID="hlHome" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+                </td>
+                <td>
+        <asp:HyperLink ID="hlCourses" runat="server" NavigateUrl="~/BuildSchedule.aspx">Manage Courses</asp:HyperLink>
+                </td>
+                <td>
+                    &nbsp;</td>
+                <td>
+        <asp:HyperLink ID="hlWebService" runat="server" NavigateUrl="~/MyWebService.asmx" ForeColor="#009900">Web Service</asp:HyperLink>
+                </td>
+                <td>
+        <asp:HyperLink ID="hlCareerList" runat="server" NavigateUrl="~/CareerList.aspx" ForeColor="#009900">Browse Careers!</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+
+        
+        </asp:ContentPlaceHolder>
+        <table class="tabManageLinks">
+            <tr>
+                <td>
+        <asp:HyperLink ID="hlChangeInfo" runat="server" NavigateUrl="~/UpdateUser.aspx">Account Info and Settings...</asp:HyperLink>
+                </td>
+                <td>
+        <asp:HyperLink ID="hlLogout" runat="server" NavigateUrl="~/Logout.aspx" ForeColor="Black">Logout</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    </form>
+</body>
+</html>

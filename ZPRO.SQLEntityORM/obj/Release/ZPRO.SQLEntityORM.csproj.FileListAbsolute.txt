@@ -1,0 +1,12 @@
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLEntityORM\bin\Release\ZPRO.SQLEntityORM.dll.config
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLEntityORM\bin\Release\ZPRO.SQLEntityORM.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLEntityORM\bin\Release\ZPRO.SQLEntityORM.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLEntityORM\bin\Release\EntityFramework.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLEntityORM\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLEntityORM\bin\Release\ZPRO.Model.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLEntityORM\bin\Release\ZPRO.Model.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLEntityORM\bin\Release\EntityFramework.xml
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLEntityORM\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLEntityORM\obj\Release\ZPRO.SQLEntityORM.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLEntityORM\obj\Release\ZPRO.SQLEntityORM.dll
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLEntityORM\obj\Release\ZPRO.SQLEntityORM.pdb

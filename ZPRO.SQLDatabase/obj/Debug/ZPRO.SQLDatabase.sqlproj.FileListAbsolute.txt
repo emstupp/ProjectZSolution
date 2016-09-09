@@ -1,0 +1,9 @@
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\bin\Debug\ZPRO.SQLDatabase.dacpac
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\bin\Debug\ZPRO.SQLDatabase.dll
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\bin\Debug\ZPRO.SQLDatabase.pdb
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\obj\Debug\ZPRO.SQLDatabase.dll
+c:\users\eric\documents\visual studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\obj\Debug\ZPRO.SQLDatabase.pdb
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\obj\Debug\Model.xml
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\obj\Debug\refactor.xml
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\obj\Debug\postdeploy.sql
+C:\Users\Eric\Documents\Visual Studio 2015\Projects\ProjectZSolution\ZPRO.SQLDatabase\obj\Debug\predeploy.sql
